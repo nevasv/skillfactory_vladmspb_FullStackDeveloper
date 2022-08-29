@@ -43,7 +43,7 @@ email = "nevasv@yandex.ru"
 domain = email.split("@")[1]
 print(domain)  # Ответ  yandex.ru
 
-# Сумма при условии леление на три нацело
+# Сумма при условии Деление на три нацело
 s = sum(I for I in numbers if I % 3 == 0)
 print(s)  # Ответ 30  6+3+6+15
 
