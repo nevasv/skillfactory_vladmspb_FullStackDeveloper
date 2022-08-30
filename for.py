@@ -19,3 +19,12 @@ for i in colours[:]:
     if i == "черный":
         colours += ["белый"]
 print(colours)
+
+List_name = {"Собака":"Домашнее животное", "Дрозд":"Птица", "Комар":"Насекомое"}
+City_name = ["Воронеж", "Новгород", "Смоленск"]
+for value in List_name.values():
+    print(value)
+for index, elem in enumerate(City_name):
+    if index % 2 == 0:
+        print(elem)      # [0] И [2]  Воронеж Смоленск
+        
