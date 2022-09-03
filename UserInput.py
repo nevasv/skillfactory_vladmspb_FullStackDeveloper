@@ -1,18 +1,13 @@
 print()
-print("-" * 50)
+#print("-" * d50)
 print("Введите цифру пункта меню")
 print("1. Введите дату")
 print("2. Введите фамилию")
 print("3. Введите колличество рабочих часов")
 print("4. Введите цену часа рабочего времени")
-print("-" * 50)
+#print("-" * 50)vffq
 print()
 
-n_string = input("Enter the numbers separated by spaces: ")
-list_n = n_string.split(" ")
-print(*list_n, sep='\n')
+month = input("Какой сейчас месяц?")
 
-numbers = input("Enter numbers separated by a space:")
-numbers_split = numbers.split()
-numbers_lines = "\n".join(numbers_split)
-print(numbers_lines)
+print("Текущий месяц -", month)
