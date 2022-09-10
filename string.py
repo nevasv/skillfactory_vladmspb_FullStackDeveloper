@@ -43,4 +43,9 @@
 # S.rjust(width, fillchar=" ")	                        Делает длину строки не меньшей width, по необходимости заполняя первые символы символом fillchar
 # S.format(*args, **kwargs)
 # Форматирование строки
-print("Строка")
+print('Alex' > 'Саша')
+
+x = 10
+y = 100
+z = (x % 2 == 0) and (y >= 100)
+print(z)
