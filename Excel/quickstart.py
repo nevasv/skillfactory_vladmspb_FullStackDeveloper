@@ -45,6 +45,19 @@ class GoogleSheet:
         print('{0} cells updated.'.format(result.get('totalUpdatedCells')))
 
 
+    # def ReadValues(self, range, values):
+    #     data = [{
+    #         'range': range,
+    #         'values': values
+    #     }]
+    #     body = {
+    #         'valueInputOption': 'USER_ENTERED',
+    #         'data': data
+    #     }
+    #     result = Sheets.Spreadsheets.Values.get(spreadsheetId=self.SPREADSHEET_ID).execute()
+    #     print(result)
+    #
+
 def main():
     gs = GoogleSheet()
     data_range = 'Bank-1S!K2:U3'
@@ -54,6 +67,9 @@ def main():
 
     ]
     gs.updateRangeValues(data_range, data_values)
+
+    # gs.ReadValues(range=data_range,).execute()
+
 
 
 if __name__ == '__main__':
