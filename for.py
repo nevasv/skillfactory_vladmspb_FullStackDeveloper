@@ -1,3 +1,13 @@
+#    ()                                              Скобки
+#    **                                              Экспонента
+#    +x, -x, ~x                                      Унарные операции +, - и ~
+#    *, /, //, %                                     Умножение, деление, остаток от деления и т. д.
+#    +, -                                            Плюс и минус
+#    ==, !=, >, >=, <, <=, is, is not, in, not in    Операторы сравнения
+#    not                                             Логическое «НЕТ»
+#    and                                             Логическое «И»
+#    or                                              Логическое «ИЛИ»
+
 edibles = ["отбивные", "пельмени", "яйца", "орехи"]
 for food in edibles:
     if food == "пельмени":
@@ -10,7 +20,7 @@ print("Ужин окончен.")
 
 fibonacci = [0,1,1,2,3,5,8,13,21]
 for i in range(len(fibonacci)):
-    print(i,fibonacci[i])
+    print(i, fibonacci[i])
 
 colours = ["красный"]
 for i in colours[:]:
@@ -27,4 +37,8 @@ for value in List_name.values():
 for index, elem in enumerate(City_name):
     if index % 2 == 0:
         print(elem)      # [0] И [2]  Воронеж Смоленск
-        
+
+
+
+
+
