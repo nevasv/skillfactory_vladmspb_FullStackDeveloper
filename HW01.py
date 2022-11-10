@@ -1,18 +1,15 @@
 L = ['Hello', 'world']
 M = L
-print(M is L)             # True
+print(M is L)  # True
 M.append('!')
-print(L)                  # ['Hello', 'world', '!']
+print(L)  # ['Hello', 'world', '!']
 M = L.copy()
-print(M is L)             # False
-
-
-
-
+print(M is L)  # False
 
 # Работа со строками
 # Функция Lambda и reduce
 from functools import reduce
+
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(reduce(lambda x, y: y - x, numbers))  # Ответ 5 .
 '''     1-0=1
@@ -40,13 +37,13 @@ print(domain)  # Ответ  yandex.ru
 s = sum(I for I in numbers if I % 3 == 0)
 print(s)  # Ответ 30  6+3+6+15
 
-fib1, fib2 = 1,1
+fib1, fib2 = 1, 1
 
 n_input = 201
 if 100 < n_input < 999:
     if n_input % 2 != 0:
         print("не делится на 2 ")
-    elif n_input % 3 != 0 :
+    elif n_input % 3 != 0:
         print("число не делится на 3 ")
     else:
         print("число удовлетворяет")
@@ -55,3 +52,4 @@ else:
 
 T = [[i * j for j in range(1, 11)] for i in range(1, 11)]
 print(T)
+
