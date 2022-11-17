@@ -19,21 +19,17 @@ class Food(Product):
     refresh_frequency = datetime.timedelta(days=1)
 
 
-class Product:
-    def __init__(self, name, category, quantity_in_stock):
-        self.name = name
-        self.category = category
-        self.quantity_in_stock = quantity_in_stock
-
-    def is_available(self):
-        return True if self.quantity_in_stock > 0 else False
-
-
 class Event:
     def __init__(self, timestamp, event_type, session_id):
         self.timestamp = timestamp
         self.type = event_type
         self.session_id = session_id
+
+
+class User:
+    def __init__(self, name, email):
+        self.name = name
+        self.email = email
 
 
 peter = User(name="Peter Robertson", email="peterrobertson@mail.com")
@@ -66,10 +62,5 @@ for event in events:
                       session_id=event.get("session_id"))
     print(event_obj.timestamp)
 
-
 eggs = Food(name="eggs", category="food", quantity_in_stock=5)
-
-    print(eggs.max_quantity)class User:
-    def __init__(self, name, email):
-        self.name = name
-        self.email = email
+print(eggs.max_quantity)
