@@ -1,28 +1,18 @@
+L = ['Hello', 'world']
+M = L
+print(M is L)  # True
+M.append('!')
+print(L)  # ['Hello', 'world', '!']
+M = L.copy()
+print(M is L)  # False
+
 # Работа со строками
-# Подсчет вхождений
-Vhojdeniya = {}
-for letter in "Mississippi":
-    Vhojdeniya[letter] = Vhojdeniya.get(letter, 0) + 1
-print(Vhojdeniya)  # Ответ {'M': 1, 'i': 4, 's': 4, 'p': 2}
-# Срезы
-numbers = [0, 1, 6, 3, 4, 5, 6, 15, 8, 2, 4]
-new_numbers = numbers[::3]
-print(new_numbers)  # Ответ [0, 3, 6, 2]
-print(sum(numbers[::3]))  # Ответ 11
-print(list(filter(lambda x: x % 3 == 0, numbers)))  # Ответ [0, 6, 3, 6, 15]
-print(list(map(lambda x: x % 3 == 0,
-               numbers)))  # Ответ [True, False, True, True, False, False, True, True, False, False, False]
-# Круговой сдвиг
-print(numbers[-1:] + numbers[:-1])  # Ответ [4, 0, 1, 6, 3, 4, 5, 6, 15, 8, 2]
-Posledniy = numbers.pop()
-print(Posledniy)
-numbers.insert(0, Posledniy)  # Ответ 4
-print(numbers)
 # Функция Lambda и reduce
 from functools import reduce
 
-print(reduce(lambda x, y: y - x, numbers))  # Ответ 5
-'''1-0=1
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(reduce(lambda x, y: y - x, numbers))  # Ответ 5 .
+'''     1-0=1
         2-1=1
         3-1=2
         4-2=2
@@ -46,4 +36,20 @@ print(domain)  # Ответ  yandex.ru
 # Сумма при условии Деление на три нацело
 s = sum(I for I in numbers if I % 3 == 0)
 print(s)  # Ответ 30  6+3+6+15
+
+fib1, fib2 = 1, 1
+
+n_input = 201
+if 100 < n_input < 999:
+    if n_input % 2 != 0:
+        print("не делится на 2 ")
+    elif n_input % 3 != 0:
+        print("число не делится на 3 ")
+    else:
+        print("число удовлетворяет")
+else:
+    print("Число не в диапазоне")
+
+T = [[i * j for j in range(1, 11)] for i in range(1, 11)]
+print(T)
 
